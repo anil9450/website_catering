@@ -7,7 +7,7 @@ const Hero = () => {
       image: "/catering.jpeg",
       heading: "CATERING SERVICES",
       paragraph:
-        "Our catering service offers delicious, customized menus for all occasions, from intimate gatherings to large events. We provide fresh, high-quality ingredients and professional service to ensure your guests enjoy an unforgettable culinary experience. Whether it's a wedding, corporate event, or celebration, we tailor every detail to meet your needs.",
+        "Our catering services offers delicious, customized menus for all occasions, from intimate gatherings to large events. We provide fresh, high-quality ingredients and professional service to ensure your guests enjoy an unforgettable culinary experience. Whether it's a wedding, corporate event, or celebration, we tailor every detail to meet your needs.",
     },
 
     {
