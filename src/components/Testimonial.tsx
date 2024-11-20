@@ -125,7 +125,13 @@ const SingleTestimonial = ({
       <div className="relative w-full pb-16 md:w-11/12 lg:w-10/12 xl:w-8/12">
         <div className="w-full items-center md:flex">
           <div className="relative mb-12 w-full max-w-[310px] md:mb-0 md:mr-12 md:max-w-[250px] lg:mr-14 lg:max-w-[280px] 2xl:mr-16">
-            <Image src={image} alt="image" className="w-full rounded" />
+            <Image
+              src={image}
+              alt="image"
+              className="w-full rounded"
+              width={500}
+              height={500}
+            />
             <span className="absolute -left-6 -top-6 z-[-1] hidden sm:block">
               <DotShape />
             </span>
