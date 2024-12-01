@@ -40,9 +40,14 @@ const Hero = () => {
   ];
   return (
     <div className="mt-6">
-      <div className="grid grid-cols md:grid-cols-2 lg:grid-cols-5 gap-4 rounded">
+      <div className="text-center mt-6">
+        <h1 className="inline-block text-4xl font-bold bg-gradient-to-r from-indigo-500 to-pink-600 bg-clip-text text-transparent">
+          Our Services
+        </h1>
+      </div>
+      <div className="grid grid-cols md:grid-cols-2 lg:grid-cols-5 gap-4 rounded mt-6">
         {data.map((items, key) => (
-          <div className="bg-gray-500 rounded" key={key}>
+          <div className="bg-black rounded" key={key}>
             <Image
               className="w-100 aspect-square rounded"
               src={items.image}
@@ -51,9 +56,7 @@ const Hero = () => {
               height={500}
             />
             <div className="px-6 py-4">
-              <div className="font-bold text-xl mb-2 text-white">
-                {items.heading}
-              </div>
+              <div className="text-xl mb-2 text-white">{items.heading}</div>
               <p className="text-white text-base text-justify">
                 {items.paragraph}
               </p>

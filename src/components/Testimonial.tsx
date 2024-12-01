@@ -49,7 +49,12 @@ const Testimonial = () => {
     },
   ];
   return (
-    <>
+    <div className="mt-4">
+      <div className="text-center mt-6">
+        <h1 className="inline-block text-4xl font-bold bg-gradient-to-r from-indigo-500 to-pink-600 bg-clip-text text-transparent">
+          Testimonial
+        </h1>
+      </div>
       <section className="pb-10 pt-10 dark:bg-dark lg:pb-[50px] lg:pt-[50px] p-4">
         <div className="container mx-auto">
           <Swiper slidesPerView={1} ref={sliderRef}>
@@ -103,7 +108,7 @@ const Testimonial = () => {
           </Swiper>
         </div>
       </section>
-    </>
+    </div>
   );
 };
 

@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import ImageSlider from "@/components/ImageSlider";
 import Menu from "@/components/Menu";
+import Owner from "@/components/Owner";
 import Task from "@/components/Task";
 import Testimonial from "@/components/Testimonial";
 
@@ -27,12 +28,21 @@ export default function Home() {
   return (
     <div className="mt-6 p-4">
       <Task />
+      <ImageSlider />
+      <div className="text-center mt-6">
+        <h1 className="inline-block text-4xl font-bold bg-gradient-to-r from-indigo-500 to-pink-600 bg-clip-text text-transparent">
+          Who we are . . .
+        </h1>
+      </div>
       <div className="flex items-center justify-center md:mt-6 mt-12">
-        <div className="shadow-2xl bg-gray-500 text-white rounded p-4">
-          <span className="text-3xl">
+        <div className="shadow-2xl bg-black text-white rounded p-4">
+          <span className="text-2xl">
             Welcome to{" "}
-            <span className="font-bold text-teal-400">Banaras Caterers</span>,
-            your one-stop solution for creating unforgettable celebrations! We
+            <span className="font-bold text-teal-400">
+              Banaras Caterers having last 10 Years of experience in Catering
+              Services
+            </span>
+            , your one-step solution for creating unforgettable celebrations! We
             specialize in a range of services designed to make your special
             occasions even more memorable, including catering, tent setups,
             haldi and mehendi ceremonies, fun-filled games, temporary tattoos,
@@ -54,7 +64,7 @@ export default function Home() {
         <div className="grid grid-cols md:grid-cols-2 lg:grid-cols-3 gap-4 rounded">
           {data.map((items, key) => (
             <div
-              className="rounded h-full dark:bg-gray-800 bg-teal-400 p-8"
+              className="rounded h-full dark:bg-gray-800 bg-black p-8"
               key={key}
             >
               <div className="flex items-center mb-3">
@@ -84,9 +94,9 @@ export default function Home() {
           ))}
         </div>
       </div>
-      <ImageSlider />
       <Hero />
       <Menu />
+      <Owner />
       <Testimonial />
       <Footer />
       <ContactButtons />
